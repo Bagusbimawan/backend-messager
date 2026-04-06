@@ -7,6 +7,7 @@ import {
   getAvatarUploadUrl,
 } from '../controllers/userController';
 import { authenticate } from '../middleware/authMiddleware';
+import { checkNotBlocked } from '../middleware/blockMiddleware';
 
 const router = Router();
 
@@ -16,6 +17,6 @@ router.get('/me', getMe);
 router.put('/me', updateMe);
 router.post('/me/avatar-url', getAvatarUploadUrl);
 router.get('/search', searchUsers);
-router.get('/:id', getUserById);
+router.get('/:id', checkNotBlocked('id'), getUserById);
 
 export default router;

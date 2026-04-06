@@ -1,0 +1,88 @@
+2026-04-02 12:00:00 [[31merror[39m]: member_count sync job failed {"error":"relation \"communities\" does not exist"}
+2026-04-02 12:00:00 [[31merror[39m]: Story cleanup job failed {"error":"relation \"stories\" does not exist"}
+2026-04-02 12:00:00 [[31merror[39m]: Disappearing messages cleanup failed {"error":"column \"disappears_at\" does not exist"}
+2026-04-02 05:09:46 [[31merror[39m]: error: relation "communities" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"communities\" does not exist"}
+2026-04-02 05:09:46 [[31merror[39m]: error: relation "communities" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"communities\" does not exist"}
+2026-04-02 05:09:46 [[31merror[39m]: error: relation "stories" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"stories\" does not exist"}
+2026-04-02 05:10:48 [[31merror[39m]: CredentialsProviderError: Could not load credentials from any providers
+    at <anonymous> (/app/node_modules/@aws-sdk/credential-provider-node/dist-cjs/index.js:145:36)
+    at <anonymous> (/app/node_modules/@aws-sdk/credential-provider-node/dist-cjs/index.js:72:26)
+    at processTicksAndRejections (native:7:39) {"error":"Could not load credentials from any providers"}
+2026-04-02 06:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 07:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 08:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 15:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 00:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 18:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 19:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 20:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 21:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-02 22:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 12:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 13:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 14:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 15:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 16:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-03 17:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-04 00:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-04 02:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-04 04:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-06 19:43:29 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 19:43:30 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 19:43:31 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 19:46:14 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 19:46:15 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 19:46:16 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 13:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-06 13:53:04 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 13:54:19 [[31merror[39m]: error: relation "calls" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"calls\" does not exist"}
+2026-04-06 13:54:20 [[31merror[39m]: error: relation "calls" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"calls\" does not exist"}
+2026-04-06 13:54:20 [[31merror[39m]: error: relation "calls" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"calls\" does not exist"}
+2026-04-06 13:54:20 [[31merror[39m]: error: relation "calls" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"calls\" does not exist"}
+2026-04-06 13:54:21 [[31merror[39m]: error: relation "calls" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"calls\" does not exist"}
+2026-04-06 14:00:00 [[31merror[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not exist"}
+2026-04-06 14:12:35 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:13:32 [[31merror[39m]: error: relation "wallpaper_presets" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"wallpaper_presets\" does not exist"}
+2026-04-06 14:13:37 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:15:34 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:15:34 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:15:44 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:15:44 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:34:11 [[31merror[39m]: error: relation "blocked_users" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"blocked_users\" does not exist"}
+2026-04-06 14:34:25 [[31merror[39m]: error: relation "blocked_users" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"blocked_users\" does not exist"}

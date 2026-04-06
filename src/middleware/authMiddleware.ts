@@ -27,3 +27,5 @@ export function authenticate(req: AuthRequest, res: Response, next: NextFunction
     res.status(401).json({ success: false, error: 'Invalid or expired token' });
   }
 }
+
+export const authMiddleware = authenticate;

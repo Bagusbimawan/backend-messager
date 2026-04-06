@@ -32,5 +32,6 @@ export function errorHandler(
 }
 
 export function notFound(_req: Request, res: Response): void {
+  console.log('NOT FOUND:', _req.method, _req.originalUrl);
   res.status(404).json({ success: false, error: 'Route not found' });
 }
