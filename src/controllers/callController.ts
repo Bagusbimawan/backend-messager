@@ -2,13 +2,29 @@ import { Response, NextFunction } from 'express';
 import { z } from 'zod';
 import { db } from '../config/db';
 import { AuthRequest } from '../middleware/authMiddleware';
+import { sendPushNotification } from '../services/notificationService';
 
 const initiateCallSchema = z.object({
   callType: z.enum(['voice', 'video']),
   roomType: z.enum(['direct', 'group']),
   conversationId: z.string().uuid().optional(),
   groupId: z.string().uuid().optional(),
-  recipientIds: z.array(z.string().uuid()).min(1).max(7),
+  recipientIds: z.array(z.string().uuid()).max(20).optional().default([]),
+}).superRefine((data, ctx) => {
+  if (data.roomType === 'direct' && data.recipientIds.length < 1) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: 'recipientIds required for direct call',
+      path: ['recipientIds'],
+    });
+  }
+  if (data.roomType === 'group' && !data.groupId) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: 'groupId required for group call',
+      path: ['groupId'],
+    });
+  }
 });
 
 // POST /api/calls/initiate
@@ -16,9 +32,24 @@ export async function initiateCall(req: AuthRequest, res: Response, next: NextFu
   try {
     const userId = req.user!.userId;
     const body = initiateCallSchema.parse(req.body);
+    let recipientIds = [...new Set(body.recipientIds)].filter((id) => id !== userId);
+
+    // For group call, backend resolves participants so mobile can pass empty list.
+    if (body.roomType === 'group' && body.groupId) {
+      const members = await db.query(
+        'SELECT user_id FROM group_members WHERE group_id = $1 AND user_id <> $2',
+        [body.groupId, userId],
+      );
+      recipientIds = members.rows.map((r) => String(r.user_id));
+    }
+
+    if (recipientIds.length < 1) {
+      res.status(400).json({ success: false, error: 'No recipients available for this call' });
+      return;
+    }
 
     // Check any recipient hasn't blocked initiator (or vice versa)
-    for (const recipientId of body.recipientIds) {
+    for (const recipientId of recipientIds) {
       const block = await db.query(
         `SELECT 1 FROM blocked_users
          WHERE (blocker_id = $1 AND blocked_id = $2)
@@ -43,7 +74,7 @@ export async function initiateCall(req: AuthRequest, res: Response, next: NextFu
       [call.id, userId],
     );
 
-    for (const recipientId of body.recipientIds) {
+    for (const recipientId of recipientIds) {
       await db.query(
         'INSERT INTO call_participants (call_id, user_id) VALUES ($1, $2)',
         [call.id, recipientId],
@@ -55,8 +86,17 @@ export async function initiateCall(req: AuthRequest, res: Response, next: NextFu
       [userId],
     );
 
+    const presenceRows = await db.query(
+      'SELECT id, is_online FROM users WHERE id = ANY($1::uuid[])',
+      [recipientIds],
+    );
+    const recipientState = recipientIds.map((id) => {
+      const found = presenceRows.rows.find((r) => String(r.id) === id);
+      return { userId: id, isOnline: Boolean(found?.is_online) };
+    });
+
     const io = req.app.get('io');
-    body.recipientIds.forEach(recipientId => {
+    recipientIds.forEach((recipientId) => {
       io.to(`user:${recipientId}`).emit('call_incoming', {
         callId: call.id,
         callType: body.callType,
@@ -67,7 +107,44 @@ export async function initiateCall(req: AuthRequest, res: Response, next: NextFu
       });
     });
 
-    res.status(201).json({ success: true, data: { callId: call.id } });
+    io.to(`user:${userId}`).emit('call_ringing', {
+      callId: call.id,
+      recipientState,
+      roomType: body.roomType,
+    });
+
+    // Push for offline users so caller still sees "ringing" behavior like WA.
+    for (const recipient of recipientState) {
+      if (recipient.isOnline) continue;
+      void sendPushNotification(recipient.userId, {
+        title: `${initiator.display_name} is calling...`,
+        body: body.callType === 'video' ? 'Incoming video call' : 'Incoming voice call',
+        data: { callId: String(call.id), type: 'call_incoming' },
+      });
+    }
+
+    // Mark missed if nobody answers within 30 seconds.
+    setTimeout(async () => {
+      try {
+        const update = await db.query(
+          `UPDATE calls
+             SET status = 'missed', ended_at = NOW()
+           WHERE id = $1 AND status = 'ringing'
+           RETURNING id`,
+          [call.id],
+        );
+        if (!update.rows.length) return;
+
+        io.to(`user:${userId}`).emit('call_missed', { callId: call.id });
+        recipientIds.forEach((recipientId) => {
+          io.to(`user:${recipientId}`).emit('call_no_answer', { callId: call.id });
+        });
+      } catch {
+        // ignore timeout task errors
+      }
+    }, 30000);
+
+    res.status(201).json({ success: true, data: { callId: call.id, recipientState } });
   } catch (err) {
     next(err);
   }

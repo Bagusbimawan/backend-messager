@@ -298,3 +298,181 @@ r[39m]: Story cleanup job failed {"error":"column \"thumbnail_url\" does not ex
 2026-04-06 14:34:25 [[31merror[39m]: error: relation "blocked_users" does not exist
     at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
     at processTicksAndRejections (native:7:39) {"error":"relation \"blocked_users\" does not exist"}
+2026-04-06 21:42:00 [[31merror[39m]: Failed to start server {"error":""}
+2026-04-06 14:43:33 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 14:43:33 [[32minfo[39m]: Redis connected
+2026-04-06 14:43:34 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 14:43:34 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 14:43:58 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"0gaoyo9_IcPLvSK2AAAF"}
+2026-04-06 14:43:58 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:43:59 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"Kx6bktJD36sIvhH2AAAH"}
+2026-04-06 14:44:06 [[31merror[39m]: error: relation "blocked_users" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"blocked_users\" does not exist"}
+2026-04-06 14:51:28 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 14:51:28 [[32minfo[39m]: Redis connected
+2026-04-06 14:51:28 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 14:51:28 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 14:53:03 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 14:53:04 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"16jYjuImVQKzUbufAAAH"}
+2026-04-06 14:57:03 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 14:57:03 [[32minfo[39m]: Redis connected
+2026-04-06 14:57:04 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 14:57:04 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 14:57:05 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"3haojRQaVia8QAYmAAAB"}
+2026-04-06 14:57:07 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 14:57:07 [[32minfo[39m]: Redis connected
+2026-04-06 14:57:08 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 14:57:08 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 14:57:08 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"IoiDFM_0nREYinNOAAAB"}
+2026-04-06 15:00:00 [[32minfo[39m]: Cleaned up expired stories {"count":5}
+2026-04-06 15:00:02 [[33mwarn[39m]: Failed to delete S3 object {"key":"dev-media/stories/test.jpg","error":"Could not load credentials from any providers"}
+2026-04-06 15:02:33 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 15:02:33 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 15:02:33 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"eM8HZx7RmR_nChCxAAAD"}
+2026-04-06 15:04:40 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:04:40 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:04:43 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 15:04:43 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"bJddvMdtpmLE11cTAAAF"}
+2026-04-06 15:05:16 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 15:05:16 [[32minfo[39m]: Redis connected
+2026-04-06 15:05:16 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 15:05:16 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 15:05:17 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"codErMagF3ujBjRVAAAB"}
+2026-04-06 15:09:09 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 15:09:09 [[31merror[39m]: error: relation "user_wallpapers" does not exist
+    at <anonymous> (/app/node_modules/pg-pool/index.js:45:11)
+    at processTicksAndRejections (native:7:39) {"error":"relation \"user_wallpapers\" does not exist"}
+2026-04-06 15:09:10 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"hH1-0y--kkknF0A1AAAD"}
+2026-04-06 15:24:00 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:24:02 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:24:04 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:24:07 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:24:30 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:32 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:34 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:36 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:39 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:41 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:46 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:24:53 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:25:07 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:25:34 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:14 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:16 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:18 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:20 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:22 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:25 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:26:30 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:14 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:17 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:19 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:21 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:23 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:27 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:32 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:40 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:27:55 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:28:22 [[31merror[39m]: Failed to start server {"error":"syntax error at or near \"(\""}
+2026-04-06 15:29:08 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 15:29:08 [[32minfo[39m]: Redis connected
+2026-04-06 15:29:08 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 15:29:08 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 15:30:04 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"aZCx4rYTBGIPhEQcAAAF"}
+2026-04-06 15:30:14 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:30:19 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"D6UEURm4XJGz7R7MAAAH"}
+2026-04-06 15:32:07 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"ZTnu9zkohK8pq9Q4AAAJ"}
+2026-04-06 15:32:19 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"JHHSid_3cdo8BJjcAAAL"}
+2026-04-06 15:41:24 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:41:24 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:41:24 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:41:46 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"9w8fGiVev0U702xmAAAN"}
+2026-04-06 15:41:47 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"L5hxvRAxerl2OzCtAAAP"}
+2026-04-06 15:43:10 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 15:43:10 [[32minfo[39m]: Redis connected
+2026-04-06 15:43:10 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 15:43:10 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 15:43:31 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"rOJMBr-pd2u7XgXTAAAB"}
+2026-04-06 15:43:48 [[32minfo[39m]: User logged in {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:43:50 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"_BNY8eoI1GwS9294AAAD"}
+2026-04-06 15:44:42 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:44:42 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:44:46 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"TEx4Qq7K4WmgW47BAAAF"}
+2026-04-06 15:45:03 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:45:18 [[32minfo[39m]: User logged in {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:45:18 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"22Vu9t17E0cICyXnAAAH"}
+2026-04-06 15:46:54 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:46:56 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:46:58 [[31merror[39m]: Failed to start server {"error":"getaddrinfo ENOTFOUND"}
+2026-04-06 15:47:01 [[32minfo[39m]: PostgreSQL connected
+2026-04-06 15:47:01 [[32minfo[39m]: Redis connected
+2026-04-06 15:47:01 [[32minfo[39m]: Background jobs started (story cleanup, member sync, disappearing messages)
+2026-04-06 15:47:01 [[32minfo[39m]: Kwento v2 backend running on port 3000 [development]
+2026-04-06 15:47:06 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"oVsFDvDH2pKIFZcnAAAB"}
+2026-04-06 15:47:37 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:47:42 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"EaBsYkWLSwADtT9lAAAD"}
+2026-04-06 15:48:40 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"VA7ne6I3Au_7M-IdAAAF"}
+2026-04-06 15:49:30 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"QPIcUAsc5sGcROUmAAAH"}
+2026-04-06 15:50:32 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:50:32 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:50:32 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:50:34 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"lqbCzDtfdatlbmUcAAAJ"}
+2026-04-06 15:51:01 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:51:06 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"ld2NzG4ZPu1Ux2mpAAAL"}
+2026-04-06 15:51:43 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:51:57 [[32minfo[39m]: User logged in {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:51:58 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"ObYOTR7vTeQD-iC_AAAN"}
+2026-04-06 15:56:10 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"qC_KuCYIiJ9kCjuwAAAP"}
+2026-04-06 15:56:16 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:56:16 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"rrSTrIOGxPeErUJaAAAR"}
+2026-04-06 15:58:48 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:58:57 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 15:59:17 [[32minfo[39m]: User logged in {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:59:17 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"IMWHVXPIw81sXtHZAAAT"}
+2026-04-06 15:59:52 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 15:59:57 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"pnAe2dFusEjtJ8N_AAAV"}
+2026-04-06 16:02:44 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:02:45 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"eK4xlvH8kNiKGTIZAAAX"}
+2026-04-06 16:02:50 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"MsfKLU2WPAu9e1zvAAAZ"}
+2026-04-06 16:02:54 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"PY1uKnCl6lJJ7Zb_AAAb"}
+2026-04-06 16:04:53 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"PA6YHfVR96n4eUTDAAAd"}
+2026-04-06 16:06:39 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:06:39 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:06:39 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:06:39 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:06:59 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"UwjTLYN3lZuNn3l6AAAf"}
+2026-04-06 16:07:22 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:07:36 [[32minfo[39m]: User logged in {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:07:38 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"Uh13fwsEUXIkkuj4AAAh"}
+2026-04-06 16:10:25 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:10:29 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"8LYpCOaqua-7BOZVAAAj"}
+2026-04-06 16:11:11 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:11:28 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"5sRxC830bxmTS3LcAAAl"}
+2026-04-06 16:13:23 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:13:40 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"50EVfcIL44TMJssMAAAn"}
+2026-04-06 16:14:11 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:14:23 [[32minfo[39m]: User logged in {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:14:24 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"zlUCYnkL-dV8n8Q7AAAp"}
+2026-04-06 16:15:34 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"E4lmW3tsR9htBAG1AAAr"}
+2026-04-06 16:16:46 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:16:46 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:17:03 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"NZcdsXE0JmqwZmFoAAAt"}
+2026-04-06 16:17:23 [[32minfo[39m]: Socket disconnected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:17:42 [[32minfo[39m]: User logged in {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:17:43 [[32minfo[39m]: Socket connected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976","socketId":"MqBwpU1BAmq248dCAAAv"}
+2026-04-06 16:18:03 [[32minfo[39m]: Socket disconnected {"userId":"7402c232-3b05-483d-a068-707c9ec2a976"}
+2026-04-06 16:18:15 [[32minfo[39m]: User logged in {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9"}
+2026-04-06 16:18:15 [[32minfo[39m]: Socket connected {"userId":"45f8f2a8-4de7-421b-8632-bfdb9a548ca9","socketId":"l_Iej3bLCqybVpNgAAAx"}
